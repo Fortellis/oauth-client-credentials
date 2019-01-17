@@ -19,11 +19,11 @@ app.get("/token", (req, response, next) => {
       };
     var postData = {
         grant_type:'client_credentials',
-        redirect_uri:'http://localhost:3000',
+        redirect_uri:config.redirect_uri,
         scope:'roles'
     }
 
-    axios.post('https://api.accounts.fortellis.io/oauth2/aus1ufzl27tS4FQ9X2p7/v1/token', postData, axiosConfig)
+    axios.post(config.authorizer_url+'/v1/token', postData, axiosConfig)
         .then((res) => {
             
             

@@ -1,4 +1,6 @@
 {
     "clientId" : "63St7B7UqT3lFztb83gY3Q5NocrvvUVu",
-    "secret" : "Hq1JB2teAWEsOIY2"
+    "secret" : "Hq1JB2teAWEsOIY2",
+    "redirect_uri" : "http://localhost:3000",
+    "authorizer_url" : "https://api.accounts.fortellis.io/oauth2/aus1ufzl27tS4FQ9X2p7"
 }
