@@ -1,12 +1,13 @@
 var express = require("express");
 var axios  = require("axios");
 var app = express();
+var config = require("./config.json");
 app.listen(3000, () => {
  console.log("Server running on port 3000");
 });
 
 app.get("/token", (req, response, next) => {
-    var clientSecret = new Buffer('63St7B7UqT3lFztb83gY3Q5NocrvvUVu:Hq1JB2teAWEsOIY2');
+    var clientSecret = new Buffer(config.clientId+':'+config.secret);
     var authorization = clientSecret.toString('base64');
 
     let axiosConfig = {
