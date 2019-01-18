@@ -12,9 +12,7 @@ This project depends on below tech stack
 * `npm start`
 
 __You should see the API server running on localhost port 3000__
-### APIs supported
 
-* Endpoints
-  * GET /token - token endpoint (http://localhost:3000/token)
+Open http://localhost:3000/token in the browser or postman to get the token.
   
 **redirect_uri -** Redirect url is added as a Callback URL while registering the app with Fortellis. Registration form contains Callback URL (optional) field.
