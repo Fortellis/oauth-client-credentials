@@ -8,7 +8,7 @@ This project depends on below tech stack
 
 ### Local development
 * `npm install`
-* __Update config.json with appropriate clientId and secret for the App
+* __Update config.json with appropriate clientId, secret and redirect_uri for the App
 * `npm start`
 
 __You should see the API server running on localhost port 3000__
@@ -16,3 +16,5 @@ __You should see the API server running on localhost port 3000__
 
 * Endpoints
   * GET /token - token endpoint (http://localhost:3000/token)
+  
+**redirect_uri -** Redirect url is added as a Callback URL while registering the app with Fortellis. Registration form contains Callback URL (optional) field.
