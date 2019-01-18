@@ -15,4 +15,4 @@ __You should see the API server running on localhost port 3000__
 ### APIs supported
 
 * Endpoints
-  * GET /token - token endpoint
+  * GET /token - token endpoint (http://localhost:3000/token)
